@@ -1,0 +1,220 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    max-width: 30%;
+    background-color: #d7d7d7;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background: #e0e0e0;
+    box-shadow:  19px 19px 38px #bebebe, -19px -19px 38px #ffffff;
+    font-family: 'DotGothic16', sans-serif;
+    word-spacing: -0.6rem;
+    font-weight: 900;
+    color: #817e8a;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.app {
+    padding: 5rem 0rem;
+    max-width: 32%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    margin-top: -1rem;
+}
+
+.urlInput {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#userInput {
+    max-width: 40%;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #ebebeb;
+    box-shadow:  17px 17px 33px #c8c8c8,
+             -17px -17px 33px #ffffff;
+    transition: 0.3s;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #817e8a;
+    line-height: 2rem;
+    letter-spacing: 0.01rem;
+    word-spacing: -0.2rem;
+    margin-bottom: -0.8rem;
+}
+
+#optionTag { 
+  font-size: 0.8rem;
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: 800;
+  color: #817e8a;
+  line-height: 2rem;
+  letter-spacing: 0.01rem;
+  word-spacing: -0.2rem;
+  padding: 0;
+  padding-left: 1rem;
+  margin-bottom: -1.5rem;
+  opacity: 0.7;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+.qrCode_div {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.qrCode {
+    margin-top: 2rem;
+    padding: 0.1rem;
+    max-width: 40%;
+    border-radius: 1rem;
+    background: #ebebeb;
+    box-shadow:  17px 17px 34px #c8c8c8,
+             -17px -17px 34px #ffffff;
+}
+
+select {
+    margin-top: -0.001rem;
+    margin-right: 0.8rem;
+    appearance: none;
+    width: 3.7rem;
+    font-size: 0.8rem;
+    font-family: 'DotGothic16', sans-serif;
+    font-stretch: extra-condensed;
+    padding: 0.1rem 0.7rem;
+    cursor: pointer;
+    border: #817e8a 1px solid;
+    background-color: #ebebeb;
+    background-image: url("/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 1.1em;
+    background-position: 2.3rem;
+    border-radius: 0.3em;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+
+  input, button {
+    cursor: pointer;
+  }
+
+  .color-inp {
+    max-width: 3rem;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#submit {
+    border-radius: 0.5rem;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  7px 7px 13px #c8c8c8,
+             -7px -7px 13px #ffffff;
+    border: none;
+    color: #817e8a;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+a img {
+    max-width: 2rem;
+    padding-left: 1rem;
+    filter: opacity(0.6);
+}
+
+
+.container_div {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    margin-bottom: -2.5rem;
+    max-width: 90%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: #ebebeb;
+    box-shadow:  17px 17px 34px #c8c8c8,
+             -17px -17px 34px #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+footer p {
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 800;
+    color: #817e8a;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #ebebeb;
+    box-shadow:  17px 17px 34px #c8c8c8,
+             -17px -17px 34px #ffffff;
+}
+
+.hide {
+    display: none;
+  }
+
+@media (max-width: 480px) {
+    .intro {
+        max-width: 80%;
+    }
+    .app {
+        max-width: 90%;
+    }
+    .urlInput {
+        display: flex;
+        justify-content: center;
+    }
+    .userInput {
+        max-width: 90%;
+    }
+
+    .qrCode {
+        max-width: 80%;
+    }
+    .container {
+        max-width: 80%;
+    }
+}
+    

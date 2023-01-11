@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>QR Code Generator - MW</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    </head>
+    <header>
+      <h1 class="intro">QR Code<br>Generator</h1>
+    </header>
+    <body>
+      <div class="app">
+        <div class="urlInput">
+          <input type="text" id="userInput" placeholder="Enter a URL ..." />
+        </div>
+        <div class="qrCode_div">
+        <div class="qrCode">
+        <p id="optionTag">Select Options...</p>
+        <div class="options">
+          <select class="sizeOptions" id="sizeOptions">
+            <option value="Size">Size</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+          </select>
+          <input type="color" id="BGColor" class="color-inp"/>
+          <input type="color" id="FGColor" class="color-inp"/>
+        </div>
+        <div class="buttons">
+          <button id="submit" disabled>Generate</button>
+          <a href="#" id="download"><img src="download.png"></a>
+        </div>
+       </div>
+       </div>
+       <div class="container_div" id="container_div">
+        <div class="container" id="container" ></div>
+       </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+    <footer>
+      <p>Created by MW - 2023</p>
+    </footer>
+</html>
