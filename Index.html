@@ -20,11 +20,12 @@
         <div class="qrCode">
         <p id="optionTag">Select Options...</p>
         <div class="options">
-          <select class="sizeOptions" id="sizeOptions">
-            <option value="Size">Size</option>
-            <option value="150">150</option>
-            <option value="200">200</option>
-            <option value="250">250</option>
+          <select class="sizeOptions" id="sizeOptions" required>
+            <optgroup label="Size">
+              <option value="150">150</option>
+              <option value="200">200</option>
+              <option value="250">250</option>
+            </optgroup>
           </select>
           <input type="color" id="BGColor" class="color-inp"/>
           <input type="color" id="FGColor" class="color-inp"/>

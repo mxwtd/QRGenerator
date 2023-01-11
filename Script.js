@@ -78,44 +78,24 @@ function hideElement() {
 }
 
 window.onload = () => {
+  window.onload = hideElement();
   container.innerHTML = "";
   sizeChoice = 150;
   sizeOptions.value = 150;
   userInput.value = "";
-  BGColor.value = BGColorChoice = "#c8c8c8";
+  BGColor.value = BGColorChoice = "#ebebeb";
   FGColor.value = FGColorChoice = "#817e8a";
   downloadBtn.classList.add("hide");
   submitBtn.disabled = true;
 };
 
-function changeContainerSize() {
-  const selectElement = document.getElementById("sizeOptions");
-  const container = document.getElementById("container");
-
-  selectElement.addEventListener("change", function() {
-    const selectedSize = this.value;
-    if (selectedSize === "150") {
-      container.style.width = "50px";
-      container.style.height = "50px";
-    } else if (selectedSize === "200") {
-      container.style.width = "100px";
-      container.style.height = "100px";
-    } else if (selectedSize === "250") {
-      container.style.width = "150px";
-      container.style.height = "150px";
-    }
-  });
-}
 
 
-
-function submitOnEnter(event) {
-  if (event.key === "Enter") {
+document.getElementById("userInput").addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.key === 'Enter') {
       document.getElementById("submit").click();
   }
-}
+});
 
-
-window.onload = changeContainerSize;
-window.onload = hideElement();
 
