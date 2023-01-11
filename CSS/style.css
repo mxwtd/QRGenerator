@@ -209,6 +209,10 @@ footer p {
     .userInput {
         max-width: 90%;
     }
+    
+    .color-inp {
+        margin-right: 0.5rem;
+    }
 
     .qrCode {
         max-width: 80%;
